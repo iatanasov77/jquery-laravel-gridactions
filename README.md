@@ -1,2 +1,2 @@
-# laravel-grid-actions
-Javascript ajax hanlers of IA Laravel Grid Actions
+# jquery-laravel-gridactions
+JQuery plugin that add ajax handlers of IA Laravel Grid Actions
