@@ -25,7 +25,6 @@
     			url:	$(this).attr( 'href' ),
     			method:	'POST',
     			data: {
-    		        "_token": options.csrfToken,
     		        "_method": "DELETE"
     		    }
     		}).done( function() {
@@ -44,7 +43,6 @@
     
     // Set up the default options.
     $.fn.LaragridActions.defaults = {
-    	csrfToken:	null,
         btnDelete:	null
     };
         
