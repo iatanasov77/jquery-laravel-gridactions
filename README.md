@@ -4,20 +4,16 @@ JQuery plugin that add ajax handlers of IA Laravel Grid Actions
 NEED:
 1. add <meta> tag with the token to the blade layout:
   ```html
-    <pre>
     <meta name="_token" content="{{ csrf_token() }}">
-    </pre>
   ```
 2. setup ajax requests:
-<code>
-  <pre>
-  $(function() {
-    $.ajaxSetup({
-      headers: {
-        'X-CSRF-Token': $('meta[name="_token"]').attr('content')
-      }
+  ```js
+    $(function() {
+      $.ajaxSetup({
+        headers: {
+          'X-CSRF-Token': $('meta[name="_token"]').attr('content')
+        }
+      });
     });
-  });
-  </pre>
-  </code>
+  ```
   
